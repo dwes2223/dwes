@@ -1,2 +1,0 @@
--fichero modificado
--mas cambios
