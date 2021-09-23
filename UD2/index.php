@@ -9,44 +9,52 @@
   <h1>Ejemplos y ejercicios php</h1>
   <?php
     $ejercicio=0;
-    $ejemplo=0;
+    $ejemplo=1;
   ?>
   
   <h2>Ejemplos</h2>
   <h3>Programar con scripts</h3>
   <ol>
     <li>
-    <a href="/ejemplos/01_CodigoIncrustado.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+    <a href="/dwes/UD2/ejemplos/01_CodigoIncrustado.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo++);  ?></a>
       Código incrustado
     </li>
 
     <li>
-      <a href="/ejemplos/02_SintaxisBasica.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/02_SintaxisBasica.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo++);  ?></a>
       Sintaxis básica.
     </li>
     <li>
-      <a href="/ejemplos/03_TiposVariables.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/03_TiposVariables.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo++);  ?></a>
       Declaraciones de variables.
     </li>
     <li>
-      <a href="/ejemplos/04_AsignacionCopiaRef.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/04_AsignacionCopiaRef.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo++);  ?></a>
       Asignación por copia y referencia.
     </li>
     <li>
-      <a href="/ejemplos/05_TipoVariablesCastings.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/05_TipoVariablesCastings.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
       Castings.
     </li>
     <li>
-      <a href="/ejemplos/06_estructurasControl.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/06_estructurasControl.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
       Estructuras de control.
     </li>
     <li>
-      <a href="/ejemplos/07_EstructurasRepeticion.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/07_EstructurasRepeticion.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
       Estructuras de repetición.
     </li>
     <li>
-      <a href="/ejemplos/08_Arrays.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      <a href="/dwes/UD2/ejemplos/08_Arrays.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
       Arrays.
+    </li>
+    <li>
+      <a href="/dwes/UD2/ejemplos/09_ArraysOperadores.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Operadores con arrays.
+    </li>
+    <li>
+      <a href="/dwes/UD2/ejemplos/10_FuncionesLibrerias.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Funciones y librerias.
     </li>
 
       <ul>

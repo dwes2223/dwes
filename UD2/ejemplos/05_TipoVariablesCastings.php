@@ -13,7 +13,7 @@ echo $a.'<br>';
 
 /*  La conversión entre integer y float es automática
         Si se recibe float cuando se espera un integer -> se trunca
-        Si al realiza una operación con un estero tiene deciamales -> se convierte a float
+        Si al realiza una operación con un entero tiene deciamales -> se convierte a float
         También se pueden utilizar los operadores de conversión
 */
 $b = 7.5;

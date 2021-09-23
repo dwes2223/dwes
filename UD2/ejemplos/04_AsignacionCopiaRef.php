@@ -11,7 +11,7 @@ echo CONSTANTE;
 //La asignación se realiza por copia
 //Las variables representan posiciones de memoria diferentes
 $a = "Hola";
-$a = $b; //asignación por copia
+$b = $a; //asignación por copia
 
 //Para definir una referencia
 $var1 = 100;
