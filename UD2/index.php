@@ -16,17 +16,37 @@
   <h3>Programar con scripts</h3>
   <ol>
     <li>
-    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
-      Hola mundo
+    <a href="/ejemplos/01_CodigoIncrustado.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Código incrustado
     </li>
 
     <li>
-      <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
-      Imprimir la configuración del servidor y de php.
+      <a href="/ejemplos/02_SintaxisBasica.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Sintaxis básica.
     </li>
     <li>
-      <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
-      Ejemolos de uso de echo y print.
+      <a href="/ejemplos/03_TiposVariables.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Declaraciones de variables.
+    </li>
+    <li>
+      <a href="/ejemplos/04_AsignacionCopiaRef.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Asignación por copia y referencia.
+    </li>
+    <li>
+      <a href="/ejemplos/05_TipoVariablesCastings.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Castings.
+    </li>
+    <li>
+      <a href="/ejemplos/06_estructurasControl.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Estructuras de control.
+    </li>
+    <li>
+      <a href="/ejemplos/07_EstructurasRepeticion.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Estructuras de repetición.
+    </li>
+    <li>
+      <a href="/ejemplos/08_Arrays.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+      Arrays.
     </li>
 
       <ul>
