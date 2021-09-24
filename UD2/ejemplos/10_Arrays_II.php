@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
         <meta charset="UTF-8">
-        <title>ejemplo 4</title>
+        <title>Ejemplo sobre el uso de arrays</title>
 </head><body>
 <?php
 
@@ -16,8 +16,9 @@ echo "<hr> Podemos ver el contenido con var_dump o print_r";
 echo "<br>";
 var_dump($array1);
 echo "<br>";
-print_r($array1); //print_r puede ser más incomodo salvo que usemos <pre></pre>
+print_r($array1);
 
+echo "<br><br>Usando la etiqueta html pre";
 echo "<pre>";
 var_dump($array1); 
 echo "</pre>";

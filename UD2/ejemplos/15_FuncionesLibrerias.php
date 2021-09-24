@@ -11,5 +11,5 @@ $var2 = NULL;
 $var3 = FALSE;
 $var4 = 0;
 
-isset: devuelve TRUE si la variable ha sido inicializada
-ech isset($var1);
+// isset: devuelve TRUE si la variable ha sido inicializada
+echo isset($var1);

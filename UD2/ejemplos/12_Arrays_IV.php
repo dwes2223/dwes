@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
         <meta charset="UTF-8">
-        <title>ejemplo 6</title>
+        <title>Imprimir datos presonales</title>
 </head><body>
 <?php
 //inicializamos

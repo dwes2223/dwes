@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
         <meta charset="UTF-8">
-        <title>ejemplo 5</title>
+        <title>Ejemplo</title>
 </head><body>
 <?php
 //inicializamos
