@@ -34,22 +34,37 @@ saludar("Ana");
 // en PHP los argumentos se pasan por copia 
 // para utiliar la referencia debe añadirse el símbolo & antes del argumento
 function duplicar ($a) {
-    $a = $a * 2;
+    $a = $a * 2;  
+    return $a;
 }
 $var = 3;
-duplicar ($var);
-echo "$var1 <br>";
+echo "<br>Duplicar: ".duplicar($var)."<br>";
+
+//Ejemplo de paso por referencia
+function triplicar (&$a) {
+    $a = $a * 3;  
+}
+echo "<br>Antes de llamar a triplicar $var<br>";
+triplicar($var);
+echo "<br>Triplicar: ".$var."<br>";
+
 
 
 function convertirMayuscula ($arr) {
-    foreach ($arr as $element){
-        strtoupper($element);
+    foreach ($arr as &$element){
+        $element= strtoupper($element);
+        echo "<br>Convertir: ".$element."<br>";
     }
     print_r($arr);
+    echo "<br>";
 }
 $nombres = ["candela", "hugo", "emma", "matias"];
 convertirMayuscula ($nombres);
 print_r($nombres);
 
 //Funciones como argumentos
+function calculador ($operacion, $numa, $numb) {
+    $resul = $operacion ($numa, $numb);
+    return $resul;
+}
 

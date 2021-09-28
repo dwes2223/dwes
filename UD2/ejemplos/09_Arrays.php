@@ -15,7 +15,7 @@ $frutas = array(0 => 'manzana', 1 => 'naranja', 2 => 'uva');
 
 //Podemos combinar tipos de datos
 $array = [2, 'naranja', 3.1416];
-echo "Me gustan la $frutas[2]";
+echo "Me gustan la $array[2]";
 
 //Añadir elementos
 $frutas[] = 'manzana'; // si fruta está vacío, posición 0
@@ -23,12 +23,14 @@ $frutas[] = 'naranja'; // ahora posición 1
 $frutas[2] = 'uva'; //ahora posición 2 porque lo ponemos, o cualquier otra.
 
 //Quitar elementos
-unset($frutas[1]);
+//unset($frutas[0]);
 
 //Recorrer un array
+echo 'Prueba foreach<br>';
 foreach ($frutas as $fruta){
     echo $fruta . '<br>';
 }
+echo 'Prueba foreach clave - valor<br>';
 foreach ($frutas as $clave => $fruta){
     echo $clave . ": " . $fruta . '<br>';
 }
@@ -57,6 +59,7 @@ $alumno = array (
     'edad' => 23
 );
 $alumno['sexo'] = "V"; //y podemos añadir elementos
+print_r($alumno);
 
 //Otro ejemplo
 $arr1 = [
@@ -98,4 +101,6 @@ $filas  = [
     1 => [21, 22],
     3 => [31, 32]
 ];
+ echo "<br>Multi:".$filas[0][0];
+ print_r($filas[0]);
 

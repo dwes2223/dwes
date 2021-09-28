@@ -27,7 +27,7 @@ while ($i < 5) {
 }
 
 //Sentencia continue: fuerza una nueva iteración del bucle
-for ( $i = 0; i < 5; $i++) {
+for ( $i = 0; $i < 5; $i++) {
     if ( $i == 2) {
         continue;
     }

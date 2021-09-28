@@ -9,7 +9,7 @@ echo "Array ordenado inicializado en la declaración <hr>";
 $array1 = [5,"hola", 2.3, true, false, "elemento5"]; // equivalente
 $array1 = array(5,"hola", 2.3, true, false, "elemento5");
 //accedemos a los elementos del array con corchetes y su posición.
-$elemento0 = $array1[0];
+$elemento0 = $array1[2];
 echo "El elemento 1 es $elemento0 y también $array1[0]";
 echo "<hr> Podemos ver el contenido con var_dump o print_r";
 
