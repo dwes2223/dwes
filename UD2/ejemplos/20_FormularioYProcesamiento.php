@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html><head>
         <meta charset="UTF-8">
-        <title>ejemplo</title>
+        <title>Formulario y procesamiento en un fichero</title>
 </head><body>
     <h2>Formulario</h2>
-    <form method="post" action="">
+    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
         <label>Nombre</label><input type="text" value="" name="nombre"> <br>
         <label>Contraseña</label><input type="password" value="" name="password"> <br>
         <input type="submit" value="enviar">

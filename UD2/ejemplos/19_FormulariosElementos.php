@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html><head>
     <meta charset="UTF-8">
-    <title>ejemplo</title>
+    <title>Elementos de un formulario</title>
 </head><body>
     <h2>Formularios & inputs</h2>
     Los tipos básicos de input son: 
-    text: texto <br>
-    password: contraseña <br>
-    hidden: texto no visible en pantalla <br>
-    * radio: opción múltiple<br>
-    * checkbox: opción única <br>
-    * select: lista desplegable <br>
-    submit: botón de envío <br>
+    <ul>
+        <li>text: texto <br></li>
+        <li>password: contraseña <br></li>
+        <li>hidden: texto no visible en pantalla <br></li>
+        <li>* radio: opción múltiple<br></li>
+        <li>* checkbox: opción única <br></li>
+        <li>* select: lista desplegable <br></li>
+        <li>submit: botón de envío <br></li>
+    </ul>
 
     <h2>Formularios de ejemplo</h2>
 
-    Vamos a detenernos en los elementos marcado con *
-
-    <h3> Elegir uno entre varios. Usod de elementos "radio" o "select"</h3>
+    <h3> Elegir uno entre varios. Uso de elementos "radio" o "select"</h3>
     
-    <form method="post" action="11action.php">
+    <form method="POST" action="19_FormulariosElementosAction.php">
         <label>Nombre</label><input type="text" value="" name="nombre"> <br>
         <label>Contraseña</label><input type="password" value="" name="apellidos"> <br>
 
-        
         Sexo: <br>
         <input type="radio" name="sexo" value="male" > Varón <br>
         <input type="radio" name="sexo" value="female" checked> Mujer<br>
@@ -44,14 +43,15 @@
     </form>
     <hr>
     <h3>Elegir varios entre varios: checkboxes. ¿Cómo debemos usarlos?</h3>
-    <h4>Opcíón 1. Bien</h4>
-    En un bloque como array. Todos los checkbox el nombre con corchetes. Recibiremos $_POST['aficion'] como un array.
+    <h4>Opción 1. Bien</h4>
+    En un bloque como array. Todos los checkbox tienen el nombre con corchetes.
+    Recibiremos $_POST['aficiones'] como un array.
     <pre>
     &lt;input type="checkbox" name="aficiones[]" value="deporte"&gt; Hacer deporte
     </pre> 
-    <form method="post" action="11action.php">
+    <form method="post" action="19_FormulariosElementosAction.php">
         hobbies:   <br>
-<!--        OJO: si ponemos el mismo nombre con corchetes recibiremos la opción
+        <!--OJO: si ponemos el mismo nombre con corchetes recibiremos la opción
         múltiple como un array. -->
         <input type="checkbox" name="aficiones[]" value="deporte"> Hacer deporte <br>
         <input type="checkbox" name="aficiones[]" value="musica"> Escuchar música  <br>     
@@ -77,7 +77,7 @@
 
     
     Importante, el value de cada input es lo que recibimos en el servidor.
-    <form method="post" action="11action.php">
+    <form method="post" action="19_FormulariosElementosAction.php">
         NOTA: bloque sin array y mismo nombre (MAL) <br>
         <input type="checkbox" name="hobby" value="musica"> Lectura  <br>      
         <input type="checkbox" name="hobby" value="cine"> Ir al cine  <br>
@@ -92,18 +92,15 @@
     &lt;input type="checkbox" name="hobby2" value="musica"&gt; Ir al cine
     </pre> 
 
-    <form method="post" action="11action.php">
+    <form method="post" action="19_FormulariosElementosAction.php">
         NOTA: bloque sin array y distinto nombre (BIEN)<br>
         <input type="checkbox" name="hobby1" value="musica"> Lectura  <br>      
         <input type="checkbox" name="hobby2" value="cine"> Ir al cine  <br>
         <input type="submit" value="enviar">
     </form>   
     
-    
-
-
     <hr>
-    <form method="post" action="11action.php">
+    <form method="post" action="19_FormulariosElementosAction.php">
         <label for="cars">Elige un coche:</label>
         <select name="cars[]" id="cars" multiple>
             <option value="volvo">Volvo</option>
