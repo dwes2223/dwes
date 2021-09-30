@@ -23,10 +23,12 @@
         <label>Nombre</label><input type="text" value="" name="nombre"> <br>
         <label>Contraseña</label><input type="password" value="" name="apellidos"> <br>
 
+        <!-- radio -->
         Sexo: <br>
         <input type="radio" name="sexo" value="male" > Varón <br>
         <input type="radio" name="sexo" value="female" checked> Mujer<br>
 
+        <!-- select -->
         Elige un color:  <br>
         <select name="color">
          <optgroup label="Grupo de colores">
@@ -50,6 +52,7 @@
     &lt;input type="checkbox" name="aficiones[]" value="deporte"&gt; Hacer deporte
     </pre> 
     <form method="post" action="19_FormulariosElementosAction.php">
+        <!-- checkbox -->
         hobbies:   <br>
         <!--OJO: si ponemos el mismo nombre con corchetes recibiremos la opción
         múltiple como un array. -->

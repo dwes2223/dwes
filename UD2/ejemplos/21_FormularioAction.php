@@ -1,6 +1,17 @@
 <?php
 
 /*
+ * Variables superglobales: son creadas por el sistema
+ *      $_SERVER: Inf del script actual y del servidor
+ *      $_GET: Datos del formulario con método GET
+ *      $_POST: Idem pero con el método POST
+ *      $_FILES: Ficheros enviados en un formulario
+ *      $_COOKIE:cookies
+ *      $_REQUEST: Combina las tres anteriores
+ *      $_SESSION: Datos de la sesión
+ * /
+
+/*
  * El array $_GET tiene un elemento por cada argumento presente en la URL
  * El nombre del argumento será la clave del elemento del array
  */
