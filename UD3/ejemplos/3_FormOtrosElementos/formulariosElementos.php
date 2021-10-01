@@ -19,7 +19,7 @@
 
     <h3> Elegir uno entre varios. Uso de elementos "radio" o "select"</h3>
     
-    <form method="POST" action="19_FormulariosElementosAction.php">
+    <form method="POST" action="FormulariosElementosAction.php">
         <label>Nombre</label><input type="text" value="" name="nombre"> <br>
         <label>Contraseña</label><input type="password" value="" name="apellidos"> <br>
 
@@ -51,7 +51,7 @@
     <pre>
     &lt;input type="checkbox" name="aficiones[]" value="deporte"&gt; Hacer deporte
     </pre> 
-    <form method="post" action="19_FormulariosElementosAction.php">
+    <form method="post" action="FormulariosElementosAction.php">
         <!-- checkbox -->
         hobbies:   <br>
         <!--OJO: si ponemos el mismo nombre con corchetes recibiremos la opción
@@ -80,7 +80,7 @@
 
     
     Importante, el value de cada input es lo que recibimos en el servidor.
-    <form method="post" action="19_FormulariosElementosAction.php">
+    <form method="post" action="FormulariosElementosAction.php">
         NOTA: bloque sin array y mismo nombre (MAL) <br>
         <input type="checkbox" name="hobby" value="musica"> Lectura  <br>      
         <input type="checkbox" name="hobby" value="cine"> Ir al cine  <br>
@@ -95,7 +95,7 @@
     &lt;input type="checkbox" name="hobby2" value="musica"&gt; Ir al cine
     </pre> 
 
-    <form method="post" action="19_FormulariosElementosAction.php">
+    <form method="post" action="FormulariosElementosAction.php">
         NOTA: bloque sin array y distinto nombre (BIEN)<br>
         <input type="checkbox" name="hobby1" value="musica"> Lectura  <br>      
         <input type="checkbox" name="hobby2" value="cine"> Ir al cine  <br>
@@ -103,7 +103,7 @@
     </form>   
     
     <hr>
-    <form method="post" action="19_FormulariosElementosAction.php">
+    <form method="post" action="formulariosElementosAction.php">
         <label for="cars">Elige un coche:</label>
         <select name="cars[]" id="cars" multiple>
             <option value="volvo">Volvo</option>
