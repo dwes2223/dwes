@@ -16,7 +16,10 @@
 class ClaseSencilla
 {
     // Declaración de una propiedad
-    public $var = 'un valor predeterminado';
+    private $var = 'un valor predeterminado';
+
+    //static para declarar atributos y métodos
+    //  - No habrá uno por objeto sino uno por clase
 
     // Declaración de un método
     public function mostrarValor() {
