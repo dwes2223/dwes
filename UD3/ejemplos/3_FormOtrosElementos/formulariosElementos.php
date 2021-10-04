@@ -9,8 +9,8 @@
         <li>text: texto <br></li>
         <li>password: contraseña <br></li>
         <li>hidden: texto no visible en pantalla <br></li>
-        <li>* radio: opción múltiple<br></li>
-        <li>* checkbox: opción única <br></li>
+        <li>* radio: opción únia<br></li>
+        <li>* checkbox: opción múltiple <br></li>
         <li>* select: lista desplegable <br></li>
         <li>submit: botón de envío <br></li>
     </ul>
@@ -19,7 +19,7 @@
 
     <h3> Elegir uno entre varios. Uso de elementos "radio" o "select"</h3>
     
-    <form method="POST" action="FormulariosElementosAction.php">
+    <form method="POST" action="formulariosElementosAction.php">
         <label>Nombre</label><input type="text" value="" name="nombre"> <br>
         <label>Contraseña</label><input type="password" value="" name="apellidos"> <br>
 
@@ -51,7 +51,7 @@
     <pre>
     &lt;input type="checkbox" name="aficiones[]" value="deporte"&gt; Hacer deporte
     </pre> 
-    <form method="post" action="FormulariosElementosAction.php">
+    <form method="post" action="formulariosElementosAction.php">
         <!-- checkbox -->
         hobbies:   <br>
         <!--OJO: si ponemos el mismo nombre con corchetes recibiremos la opción
@@ -80,7 +80,7 @@
 
     
     Importante, el value de cada input es lo que recibimos en el servidor.
-    <form method="post" action="FormulariosElementosAction.php">
+    <form method="post" action="formulariosElementosAction.php">
         NOTA: bloque sin array y mismo nombre (MAL) <br>
         <input type="checkbox" name="hobby" value="musica"> Lectura  <br>      
         <input type="checkbox" name="hobby" value="cine"> Ir al cine  <br>
@@ -95,7 +95,7 @@
     &lt;input type="checkbox" name="hobby2" value="musica"&gt; Ir al cine
     </pre> 
 
-    <form method="post" action="FormulariosElementosAction.php">
+    <form method="post" action="formulariosElementosAction.php">
         NOTA: bloque sin array y distinto nombre (BIEN)<br>
         <input type="checkbox" name="hobby1" value="musica"> Lectura  <br>      
         <input type="checkbox" name="hobby2" value="cine"> Ir al cine  <br>
