@@ -4,15 +4,16 @@ class App
 {
   public function __construct($name = "Aplicación PHP")
   {
-    // echo "Consturyendo la app <hr>";
+    // echo "Construyendo la app <hr>";
     $this->name = $name;
     $this->module = "Desarrollo Web en Entorno Servidor";
-    $this->teacher = "Rafael Cabeza";
+    $this->teacher = "Ester Grao";
     $this->student = "Fulano De Tal";
   }
 
   public function run()
   {
+    // El método a ejecutar depende de un argumente $GET 
     if (isset($_GET['method'])) {
       $method = $_GET['method'];
     } else {
@@ -21,7 +22,7 @@ class App
   
     try {
       $this->$method();      
-    } catch (\Throwable $th) {
+    } catch (Throwable $th) {
       if (method_exists($this, $method)) {
         header("HTTP/1.0 500 Internal Server Error");
         return http_response_code(500);
