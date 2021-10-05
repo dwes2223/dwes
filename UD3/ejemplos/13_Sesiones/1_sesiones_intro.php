@@ -1,8 +1,12 @@
 <?php
 
 /*
-* PHP es un protocolo son estado -> las diferentes peticiones son independientes
+* PHP es un protocolo son estado 
+*   -> las diferentes peticiones son independientes
 *   -> para asociarlas se usan las sesiones
+* 
+* Las sesiones dpermiten guardar información en el lado del servidor
+* 
 * Al iniciar una sesión el servidor:
 *   -> asigna y envía al usuario un identificador de sesión
 *   -> en las siguientes peticiones el usuario envía al servidor ese identificador de sesión
@@ -20,3 +24,9 @@ if ( !isset ($_SESSION['count'])) {
 }
 echo "hola".$_SESSION['count'];
 echo "<br><a href='sesiones_uso_basico2.php'>Siguiente</a>";
+
+// Eliminar un elemento de la sesión
+unset($_SESSION['count']);
+
+// Borrar toda la sesión
+session_destroy();

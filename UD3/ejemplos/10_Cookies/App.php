@@ -9,7 +9,7 @@ class App
     // echo "Consturyendo la app <hr>";
     $this->name = $name;
     $this->module = "Desarrollo Web en Entorno Servidor";
-    $this->teacher = "Rafael Cabeza";
+    $this->teacher = "Ester Grao";
     $this->student = "Fulano De Tal";
   }
 

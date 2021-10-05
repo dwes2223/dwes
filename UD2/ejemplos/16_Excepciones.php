@@ -1,5 +1,6 @@
 <?php
 /*
+* Una excepción es un objeto. Describe un error o comportamiento indeseado.
 * Para controlar las excepciones se usan bloque try-catch-finally
 */
 
@@ -16,6 +17,7 @@ try {
 } catch (Exception $e) {
     echo "Excepcion ".$e->getMessage()."<br>";
 } finally {
+    // se ejecuta siempre, haya o no excepciones
     echo "Primer finally<br>";
 }
 try {

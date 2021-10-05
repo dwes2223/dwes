@@ -9,7 +9,7 @@
  *      $_COOKIE:cookies
  *      $_REQUEST: Combina las tres anteriores
  *      $_SESSION: Datos de la sesión
- * /
+ */
 
 /*
  * El array $_GET tiene un elemento por cada argumento presente en la URL
