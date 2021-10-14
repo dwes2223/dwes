@@ -17,7 +17,7 @@ class Persona
     }
 
     public function setNombre($nombre) {
-        $this-> nombre -> $nombre;
+        $this-> nombre = $nombre;
     }
 
     public function saludar() {
