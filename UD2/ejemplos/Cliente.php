@@ -17,7 +17,7 @@ class Cliente extends Persona {
     }
 
     public function __toString() {
-        return "Cliente: ".$this->nombre;
+        return "Cliente: ".$this->getNombre();
     }
 
     
