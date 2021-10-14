@@ -5,7 +5,7 @@ class Cliente extends Persona {
 
     function __construct ($nombre, $apellido, $edad, $saldo) {
         parent::__construct ($nombre, $apellido, $edad);
-        $this->saldo = $salgo;
+        $this->saldo = $saldo;
     }
 
     public function getSaldo() {
