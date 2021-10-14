@@ -8,3 +8,4 @@
     echo "Soy $p1";
     echo "<br>";
     echo "Mi nombre completo es ".$p1->getNombre();
+    $c1 = new Cliente ('Juan', 'García', 18, 200);
