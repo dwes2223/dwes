@@ -11,9 +11,9 @@ class App
     if (isset($_GET['method'])) {
       $method = $_GET['method'];
     } else {
+      //La primera que carga la página ejecuta el método index
       $method = 'index';
     }
-  
     $this->$method();      
   }
   public function index()

@@ -13,6 +13,7 @@ class App
 
   public function run()
   {
+    //Desde aquí contralamos la lógica de negocio -> qué método ejecutar
     echo "Moneda al aire... <hr>";
     $moneda = rand(0,1);
     // if ($moneda == 1) {
@@ -27,6 +28,7 @@ class App
 
   public function index()
   {
+    // Mostrar la vista al usuario -> el restultado
     echo "Estamos en el index<br>";
     echo "Estos es $this->name<br>";
     echo "Me llamo $this->student<br>";

@@ -18,6 +18,7 @@ class App
     if (isset($_GET['method'])) {
       $method = $_GET['method'];
     } else {
+      //La primera vez ejecuta index
       $method = 'index';
     }
   

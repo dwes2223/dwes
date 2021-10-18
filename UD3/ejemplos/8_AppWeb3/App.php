@@ -13,10 +13,12 @@ class App
 
   public function run()
   {
-    // El método a ejecutar depende de un argumente $GET 
+    // Recoger los argumentos de $_GET
+    // El método a ejecutar depende de un argumento $GET 
     if (isset($_GET['method'])) {
       $method = $_GET['method'];
     } else {
+      //La primera vez ejecuta el método index
       $method = 'index';
     }
   
@@ -39,6 +41,7 @@ class App
 
   public function index()
   {
+    // Incluye la vista index.php
     // echo "Estamos en el index<br>";
     include('views/index.php');
   }

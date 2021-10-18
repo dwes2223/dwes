@@ -1,10 +1,10 @@
 <?php
 
 /* Formulario de login
-* si va bien abre la sesión, guarda el nombre de usuario y redirige a principal.php
-* si va mal -> mensaje de error
+* 	-> datos correctos: sesiones1_principal.php
 */
 function comprobar_usuario ($nombre, $clave) {
+	//Simula la base de datos, admite dos usuarios: login y password
 	if ( $nombre == "usuario" and $clave == "1234") {
 		$usu['nombre'] = "usuario";
 		$usu['rol'] = 0;
@@ -24,6 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$err = TRUE;
 		$usuario = $_POST['usuario'];
 	} else {
+		// Si el login es correcto crea un sesión
+		// Almacena en la variable usuario el nombre del usuario
 		session_start();
 		$_SESSION['usuario'] = $_POST['usuario'];
 		header ("Location: sesiones1_principal.php");
@@ -47,7 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			Usuario
 			<input value = "<?php if (isset($usuario)) echo $usuario ?>" id = "usuario" name = "usuario" type = "text">
 			Clave
-			
+			<input id = "clave" name = "clave" type = "password">
+			<input type = "submit">
 		</form>
 	</body>
 </html>

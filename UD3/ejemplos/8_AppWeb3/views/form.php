@@ -9,6 +9,7 @@
 </head>
 <body>
   <?php
+    //Incluir los enlaces
     require('views/header.php');
   ?>
   <h1>Login de  <?= $this->name ?></h1>

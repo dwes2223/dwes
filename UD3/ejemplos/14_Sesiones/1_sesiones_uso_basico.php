@@ -1,11 +1,10 @@
 <?php
-
 /*
-* PHP es un protocolo son estado 
+* PHP es un protocolo sin estado 
 *   -> las diferentes peticiones son independientes
 *   -> para asociarlas se usan las sesiones
 * 
-* Las sesiones dpermiten guardar información en el lado del servidor
+* Las sesiones permiten guardar información en el lado del servidor
 * 
 * Al iniciar una sesión el servidor:
 *   -> asigna y envía al usuario un identificador de sesión

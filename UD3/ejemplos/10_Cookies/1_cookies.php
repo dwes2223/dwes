@@ -12,7 +12,7 @@
 setcookie ('nueva', '1', time() + 3600 * 24);
 
 // Se accede a su contenido mendiante la variable superglobal $_COOKIE
-echo $_COOKIE['nueva'];
+echo "Valor de la cookie: ". $_COOKIE['nueva'];
 
 // Para eliminar una cookie usa setcookie con tiempo menor al actual: 
 setcookie ('nueva', '1', time() - 3600 * 24);

@@ -8,6 +8,7 @@
 </head>
 <body>
   <?php
+  //Incluir los enlaces
   require('views/header.php');
   ?>
   <h1>Home de <?= $this->name ?></h1>
@@ -17,6 +18,6 @@
 
   Me llamo <?= $this->student ?>
   <br>
-  Estamos estudiando <?= $this->module ?> con el profesor <?= $app->teacher ?>
+  Estamos estudiando <?= $this->module ?> con el profesor <?= $this->teacher ?>
 </body>
 </html>

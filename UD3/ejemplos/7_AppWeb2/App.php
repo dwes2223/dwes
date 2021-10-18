@@ -13,6 +13,7 @@ class App
 
   public function run()
   {
+    // Controlar la lógica de negocio
     echo "Moneda al aire... <hr>";
     $moneda = rand(0,1);
     // if ($moneda == 1) {
@@ -27,6 +28,7 @@ class App
 
   public function index()
   {
+    //Incluir la vista index.php
     echo "Estamos en el index<br>";
     include('views/index.php');
   }
