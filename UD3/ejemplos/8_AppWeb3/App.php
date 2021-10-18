@@ -39,6 +39,13 @@ class App
     }
   }
 
+  public function listar()
+  {
+    // Incluye la vista index.php
+    // echo "Estamos en el index<br>";
+    include('views/index.php');
+  }
+
   public function index()
   {
     // Incluye la vista index.php
