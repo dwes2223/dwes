@@ -12,7 +12,7 @@
 *   -> para controlar la sesión el servidor deja una cookie con el id de sesión en el cliente
 */
 
-// Crear sesión: start_session()
+// Crear sesión: session_start()
 // Una vez creada, se usa la variable global $_SESSION para compartir información entre los scripts
 
 session_start();
@@ -22,7 +22,7 @@ if ( !isset ($_SESSION['count'])) {
     $_SESSION['count']++;
 }
 echo "hola".$_SESSION['count'];
-echo "<br><a href='sesiones_uso_basico2.php'>Siguiente</a>";
+echo "<br><a href='2_sesiones_uso_basico2.php'>Siguiente</a>";
 
 // Eliminar un elemento de la sesión
 unset($_SESSION['count']);
