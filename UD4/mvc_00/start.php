@@ -1,6 +1,5 @@
 <?php
 
-// echo "Inicio<br>";
 require_once "Controller.php";
 
 $app = new Controller();

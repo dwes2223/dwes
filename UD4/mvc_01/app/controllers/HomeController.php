@@ -8,7 +8,7 @@ class HomeController
 
     function __construct()
     {
-        // echo "En HomeController";
+        echo "HomeController -> construct";
     }
 
     public function index()

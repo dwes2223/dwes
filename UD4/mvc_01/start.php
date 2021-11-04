@@ -1,6 +1,6 @@
 <?php
 require "core/App.php";
 
-// echo "Inicio<br>";
+// Controlador frontal
 $app = new App();
 
