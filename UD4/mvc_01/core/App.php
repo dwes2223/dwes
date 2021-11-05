@@ -40,7 +40,7 @@ class App
 
     function __construct()
     {
-        if (isset($_GET['url'])) {
+        if (isset($_GET['url']) and !empty($_GET['url'])) {
             $url = $_GET['url'];
         } else {
             $url = 'home';
@@ -58,26 +58,21 @@ class App
             $method = "index";
         }
 
-        // echo "$url";
+        // echo "Url: $url <br>";
         // echo "<pre>";
         // var_dump($arguments);
 
-        // echo $controllerName;
+        // echo "Controlador: $controllerName";
         // echo "<br>";
         // echo $method;
         // echo "<hr>";
-
-
-        //$file = "../app/controllers/$controllerName" . ".php";
-        $file = "/Ud4/mvc_01/app/controllers/$controllerName" . ".php";
+        $file = "app/controllers/$controllerName" . ".php";
         if (file_exists($file)) {
             require_once $file;
         } else {
             header("HTTP/1.0 404 Not Found");
-            echo "No encontrado";
             die();
         }
-
         $controllerObject = new $controllerName;
         if (method_exists($controllerName, $method)) {
             $controllerObject->$method($arguments);
