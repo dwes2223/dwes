@@ -7,4 +7,4 @@ RewriteEngine On
 #RewriteCond %{SCRIPT_FILENAME} !-f 
 #regla de reescritura de la url
 #RewriteRule ^(.+)*$ index.php?url=$1 [QSA,L]
-RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+RewriteRule ^(.*)$ test.php?url=$1 [QSA,L]

@@ -1,7 +1,7 @@
 <?php
+// Url: http://mvc.local/mvc_00
 
 require_once "Controller.php";
-
 $app = new Controller();
 
 if(isset($_GET['method'])) {

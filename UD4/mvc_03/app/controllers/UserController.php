@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Controllers;
 /**
 *
 */
@@ -13,8 +13,7 @@ class UserController
 
     public function index()
     {
-        require "app/views/user.php";
+        require "../app/views/user.php";
 
     }
 }
-
