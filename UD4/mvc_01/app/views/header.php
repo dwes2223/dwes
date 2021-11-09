@@ -7,10 +7,10 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="<?= PATH."home"?>">Home</a>
+        <a class="nav-link" href="<?= PATH."/home"?>">Home</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= PATH."user"?>">Usuarios</a>
+        <a class="nav-link" href="<?= PATH."/user"?>">Usuarios</a>
       </li>
 <!--
       <li class="nav-item active">
@@ -22,7 +22,7 @@
     <!-- nuevo -->
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="<?= PATH."login"?>">Login</a>
+        <a class="nav-link" href="<?= PATH."/login"?>">Login</a>
       </li>
     </ul>
   </div>

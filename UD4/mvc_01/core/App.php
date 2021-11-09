@@ -60,7 +60,7 @@ class App
             $method = "index";
         }
 
-        // echo "Url: $url <br>";
+         echo "App - Url: $url <br>";
         // echo "<pre>";
         // var_dump($arguments);
 
