@@ -20,14 +20,16 @@
 *       Nosotros escribiremos: http://mvc.local/user/show
 *       Apache interpretará: http://mvc.local/index.php?url=user/show
 * 
+*   Vamos a hacer que todas las peticiones lleguen a App
 *   -> Necesitamos que Apache tenga activo el módulo rewrite
 */
 class App
 {
     /*
     * Controlador frontal
+    *   Punto de entrada. Clase que recibe todas las peticiones.
     *   Lleva el control de la aplicación de acuerdo a la ruta recibida
-    *   Carga un controlador de acuerdo a la ruta y después ejecuta uno de sus métodos
+    *   Carga un controlador según la ruta y ejecuta uno de sus métodos
     *   Esquema que usaremos: /controlador/metodo/argumento1/argumento2
     *   Ejemplo: La ruta /user/index
     *              -> Carga el controlador UserController
