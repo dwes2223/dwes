@@ -9,7 +9,7 @@ require_once('User.php');
  *  El controlador tras obtener los datos del modelo invoca una vista.
  * 
  * Ejemplo simplificado, sin BD:
- *      Un fichero cargador: start.php
+ *      Un fichero cargador: index.php
  *      Un controlador: Controller.php
  *      Un modelo: User.php
  *      Dos vistas: invex y show
