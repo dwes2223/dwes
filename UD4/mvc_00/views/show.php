@@ -17,6 +17,6 @@
         <?php echo $user[1]?>
     </li>
     <hr>
-    <a href="?method=index">Lista</a>
+    <a href="?method=home">Lista</a>
 </body>
 </html>

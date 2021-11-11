@@ -7,7 +7,7 @@ $app = new Controller();
 if(isset($_GET['method'])) {
     $method = $_GET['method'];
 } else {
-    $method = 'index';
+    $method = 'home';
 }
 
 if(method_exists($app, $method)) {

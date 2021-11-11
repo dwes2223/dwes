@@ -21,11 +21,11 @@ class Controller
     {
         echo "Controller -> construct<br>";
     }
-    public function index()
+    public function home()
     {
         $users = User::all();
         // echo json_encode($users);
-        require('views/index.php');
+        require('views/home.php');
     }
     public function show()
     {
