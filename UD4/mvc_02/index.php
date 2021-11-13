@@ -1,5 +1,5 @@
 <?php
 require "core/App.php";
-
-// echo "Inicio<br>";
+require "config/env.php";
+ 
 $app = new \Core\App();

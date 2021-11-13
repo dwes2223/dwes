@@ -1,9 +1,7 @@
 <?php
 namespace App\Controllers;
 
-/**
-*
-*/
+
 class LoginController
 {
 
@@ -14,6 +12,6 @@ class LoginController
 
     public function index()
     {
-        require "../app/views/login.php";
+        require "app/views/login.php";
     }
 }

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <?php require "../app/views/header.php" ?>
+  <?php require "app/views/header.php" ?>
 
   <main role="main" class="container">
     <div class="starter-template">
@@ -34,7 +34,7 @@
     </div>
 
   </main><!-- /.container -->
-  <?php require "../app/views/footer.php" ?>
+  <?php require "app/views/footer.php" ?>
 
 
 </body>

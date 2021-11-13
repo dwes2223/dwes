@@ -1,14 +1,17 @@
 <?php
 namespace Core;
-/**
-*
+
+/*
+*   Todas las clases están contenidas en el namespace: App\Controllers
+*   La clase App está contenida en el namespace Core
+*   En la clase App los controladores son referidos a su namespace
 */
+
 class App
 {
 
     function __construct()
     {
-        // echo "Clase App<br>";
 
         if (isset($_GET['url'])) {
             $url = $_GET['url'];
@@ -32,13 +35,8 @@ class App
         // echo "<pre>";
         // var_dump($arguments);
 
-        // echo $controllerName;
-        // echo "<br>";
-        // echo $method;
-        // echo "<hr>";
 
-
-        $file = "../app/controllers/$controllerName" . ".php";
+        $file = "app/controllers/$controllerName" . ".php";
         if (file_exists($file)) {
             require_once $file;
         } else {
@@ -48,6 +46,12 @@ class App
         }
 
         $controllerName = '\\App\\Controllers\\' . $controllerName;
+
+        echo $controllerName;
+        echo "<br>";
+        // echo $method;
+        // echo "<hr>";
+
         $controllerObject = new $controllerName;
         if (method_exists($controllerName, $method)) {
             $controllerObject->$method($arguments);
