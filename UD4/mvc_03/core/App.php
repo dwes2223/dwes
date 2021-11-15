@@ -1,8 +1,22 @@
 <?php
 namespace Core;
-/**
+
+/*
+* - Vamos a acceder a bases de datos
+* - Vamos a usar el conector PDO (está incluído en el Dockerfile de mvc)
+* - Vamos a usar herencia para que la conexión a la BBDD sea definida en un único sitio
 *
+* PDO:
+*   Interfaz para acceder a bases de datos
+*   Proporciona una capa de abstracción de acceso a datos 
+*
+* Active Record:
+*   El patrón active record define clases que permiten el mapeo objeto relacional
+*   La misma clase:
+*       -> Contiene los atributos correspondientes a las columnas de un registro
+*       -> Define los métodos necesarios para la consulta y modificación de registros
 */
+
 class App
 {
 
@@ -38,7 +52,7 @@ class App
         // echo "<hr>";
 
 
-        $file = "../app/controllers/$controllerName" . ".php";
+        $file = "app/controllers/$controllerName" . ".php";
         if (file_exists($file)) {
             require_once $file;
         } else {

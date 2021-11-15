@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-  <?php require "../app/views/parts/head.php" ?>
+  <?php require "app/views/parts/head.php" ?>
 </head>
 
 <body>
 
-  <?php require "../app/views/parts/header.php" ?>
+  <?php require "app/views/parts/header.php" ?>
 
   <main role="main" class="container">
     <div class="starter-template">
@@ -29,7 +29,7 @@
           <td><?php echo $user->email ?></td>
           <td><?php echo $user->birthdate ? $user->birthdate->format('d-m-Y') : 'nonato' ?></td>
           <td>
-            <a href="/user/show/<?php echo $user->id ?>" class="btn btn-primary">Ver </a>
+            <a href="<?= PATH."/user/show/".$user->id ?>" class="btn btn-primary">Ver </a>
           </td>
           </tr>
         <?php } ?>
@@ -38,10 +38,10 @@
     </div>
 
   </main><!-- /.container -->
-  <?php require "../app/views/parts/footer.php" ?>
+  <?php require "app/views/parts/footer.php" ?>
 
 
 </body>
-<?php require "../app/views/parts/scripts.php" ?>
+<?php require "app/views/parts/scripts.php" ?>
 
 </html>
