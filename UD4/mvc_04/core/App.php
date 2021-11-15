@@ -1,7 +1,10 @@
 <?php
 namespace Core;
+
 /**
-*
+* CRUD
+*   -> Operaciones básicas para la gestión de bases de datos
+*   -> create, read, ipdate, delete
 */
 class App
 {
@@ -38,7 +41,7 @@ class App
         // echo "<hr>";
 
 
-        $file = "../app/controllers/$controllerName" . ".php";
+        $file = "app/controllers/$controllerName" . ".php";
         if (file_exists($file)) {
             require_once $file;
         } else {

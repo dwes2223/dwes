@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-require_once "../app/models/User.php";
+require_once "app/models/User.php";
 use App\Models\User;
 /**
 *
@@ -19,7 +19,7 @@ class UserController
         //buscar datos
         $users = User::all();
         //pasar a la vista
-        require('../app/views/user/index.php');
+        require('app/views/user/index.php');
     }
     
     public function show($args)
@@ -29,6 +29,6 @@ class UserController
         $user = User::find($id);
         // var_dump($user);
         // exit();
-        require('../app/views/user/show.php');        
+        require('app/views/user/show.php');        
     }
 }

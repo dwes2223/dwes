@@ -1,3 +1,3 @@
 <?php
-    define ('PATH', '/mvc_01/');
+    define ('PATH', '/mvc_04');
 ?>
