@@ -30,4 +30,3 @@ class Model
         return $db;
     }
 }
-

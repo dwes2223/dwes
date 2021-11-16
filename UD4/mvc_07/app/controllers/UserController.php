@@ -19,12 +19,12 @@ class UserController
         //buscar datos
         $users = User::all();
         //pasar a la vista
-        require('../app/views/user/index.php');
+        require('app/views/user/index.php');
     }
     
     public function create()
     {
-        require '../app/views/user/create.php';
+        require 'app/views/user/create.php';
     }
     
     public function store()
@@ -43,15 +43,13 @@ class UserController
         // $id = (int) $args[0];
         list($id) = $args;
         $user = User::find($id);
-        // var_dump($user);
-        // exit();
-        require('../app/views/user/show.php');        
+        require('app/views/user/show.php');        
     }
     public function edit($arguments)
     {
         $id = (int) $arguments[0];
         $user = User::find($id);
-        require '../app/views/user/edit.php';
+        require 'app/views/user/edit.php';
     }
     
     public function update()
@@ -79,7 +77,7 @@ class UserController
         //iniciar buffer, para construir un response
         ob_start();
         $users = User::all();
-        require_once ('../app/views/user/pdf.php');
+        require_once ('app/views/user/pdf.php');
         // Volcamos el contenido del buffer
         // el response ya no va al navegador, va a $html
         $html = ob_get_clean();
@@ -106,4 +104,3 @@ class UserController
         $dompdf->stream();        
     }
 }
-

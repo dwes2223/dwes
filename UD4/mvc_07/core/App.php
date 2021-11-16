@@ -1,8 +1,7 @@
 <?php
 namespace Core;
-/**
-*
-*/
+
+
 class App
 {
 
@@ -38,7 +37,7 @@ class App
         // echo "<hr>";
 
 
-        $file = "../app/controllers/$controllerName" . ".php";
+        $file = "app/controllers/$controllerName" . ".php";
         if (file_exists($file)) {
             // require_once $file;
         } else {
@@ -58,4 +57,3 @@ class App
         }
     }
 }
-

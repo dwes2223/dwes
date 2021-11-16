@@ -35,6 +35,10 @@ class User extends Model
     /*
     * El método find usa funciones preparadas
     * Este método carga un registro a partir de su id
+    * Paso de parámetros:
+    *   a) pasando un array en el execute
+    *   b) método bindParam: se para una variable
+    *   c) método bindValue: un literal o el valor de una variable
     */
     public static function find($id) 
     {
