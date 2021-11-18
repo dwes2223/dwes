@@ -53,9 +53,9 @@ class User extends Model
         //  Si es DateTime: año:mes-dia h:m:s
         //Php puede manejar de forma nativa datos fecha:
         //  funciones: date() o strtotime()
-        // echo $this->birthdate->format('d-m-y');
+        #echo "<br>Cambio el formato".$user->birthdate->format('d-m-y');
         //clase dateTime
-        //$this->birthdate = DateTime::createFromFormat('Y-m-d', $this->birthdate)
+        //$this->birthdate = DateTime::createFromFormat('Y-m-d', $user->birthdate)
         return $user;
     }    
     public function insert(){ 
