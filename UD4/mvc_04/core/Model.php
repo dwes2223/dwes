@@ -8,6 +8,7 @@ use const Config\PASSWORD;
 
 //necesario para referirnos a ella
 use PDO;
+use PDOException;
 
 class Model
 {

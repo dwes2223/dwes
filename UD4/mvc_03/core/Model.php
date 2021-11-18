@@ -8,6 +8,7 @@ use const Config\PASSWORD;
 
 //necesario para referirnos a ella
 use PDO;
+use PDOException;
 
 /*
 * Vamos a definir la conexión a la BD dentro de una superclase modelo
