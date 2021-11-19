@@ -2,19 +2,19 @@
 <html lang="es">
 
 <head>
-  <?php require "../app/views/parts/head.php" ?>
+  <?php require "app/views/parts/head.php" ?>
 </head>
 
 <body>
 
-  <?php require "../app/views/parts/header.php" ?>
+  <?php require "app/views/parts/header.php" ?>
 
   <main role="main" class="container">
     <div class="starter-template">
 
     <h1>Alta de usuario</h1>
 
-    <form method="post" action="/user/store">
+    <form method="post" action="<?= PATH."/user/store"?>">
 
     <div class="form-group">
         <label>Nombre</label>
@@ -37,10 +37,10 @@
   </div>
 
   </main><!-- /.container -->
-  <?php require "../app/views/parts/footer.php" ?>
+  <?php require "app/views/parts/footer.php" ?>
 
 
 </body>
-<?php require "../app/views/parts/scripts.php" ?>
+<?php require "app/views/parts/scripts.php" ?>
 
 </html>

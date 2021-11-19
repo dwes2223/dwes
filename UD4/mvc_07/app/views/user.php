@@ -18,5 +18,5 @@
 
 
 </body>
-  <?php require "../app/views/parts/scripts.php" ?>
+  <?php require "app/views/parts/scripts.php" ?>
 </html>

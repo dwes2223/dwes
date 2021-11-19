@@ -15,7 +15,7 @@ namespace Core;
 *   2) Iniciamos el proyecto:
 *       >> cd project_directory
 *       >> composer init //crea un fichero llamado composer.json
-*           -> El proyecto y sus dependencias se definene en composer.json
+*           -> El proyecto y sus dependencias se define en composer.json
 *               - En require definimos librerías a usar por el proyecto
 *               - En autoload definimos los namespaces que vamos a usar y los directorios donde está cada uno de ellos
 *
@@ -47,7 +47,6 @@ class App
 
         // vamos a usar la url de la siguiente manera:
         //   controlador/metodo/argumentos
-
         $arguments = explode('/', trim($url, '/'));
         $controllerName = array_shift($arguments);
         $controllerName = ucwords($controllerName) . "Controller";
@@ -56,16 +55,6 @@ class App
         } else {
             $method = "index";
         }
-
-        // echo "$url";
-        // echo "<pre>";
-        // var_dump($arguments);
-
-        // echo $controllerName;
-        // echo "<br>";
-        // echo $method;
-        // echo "<hr>";
-
 
         $file = "app/controllers/$controllerName" . ".php";
         if (file_exists($file)) {

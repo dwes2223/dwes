@@ -1,20 +1,19 @@
 {
-    "name": "rafacabeza/mvc",
-    "description": "Mvc de clases DWES",
-    "authors": [
-        {
-            "name": "\"Rafael Cabeza",
-            "email": "rafacabeza@gmail.com"
-        }
-    ],
-    "require": {
-        "dompdf/dompdf": "^0.8.3"
-    },
+    "name": "alumno/mvc_06",
     "autoload": {
         "psr-4": {
             "Core\\": "core/",
             "App\\Controllers\\": "app/controllers/",
             "App\\Models\\": "app/models/"
         }
+    },
+    "authors": [
+        {
+            "name": "esgrao",
+            "email": "ester.grao@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^0.8.2"
     }
 }

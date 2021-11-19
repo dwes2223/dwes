@@ -1,6 +1,6 @@
 # MVC con PHP
 
-- Repositorio para desarrollar las clases del tema 2
+- Repositorio para desarrollar las clases del tema 4
 - MVC
 -
 
@@ -13,13 +13,13 @@
     ServerName mvc18.local
 
     ServerAdmin webmaster@localhost
-    DocumentRoot /home/alumno/mvc18/public
+    DocumentRoot /home/alumno/dwes/
 
 
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-    <Directory /home/alumno/mvc18/public>
+    <Directory /home/alumno/dwes>
         Options Indexes FollowSymLinks MultiViews
         AllowOverride All
         Require all granted

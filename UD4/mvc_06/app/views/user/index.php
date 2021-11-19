@@ -13,8 +13,8 @@
     <div class="starter-template">
       <h1>Lista de usuarios</h1>
       <p>
-      <a href="<?= PATH."/user/create/".$user->id ?>" class="btn btn-primary">Nuevo</a>
-      <a href="<?= PATH."/user/pdf/".$user->id ?>" class="btn btn-primary">Pdf</a>        
+      <a href="<?= PATH."/user/create" ?>" class="btn btn-primary">Nuevo</a>
+      <a href="<?= PATH."/user/pdf" ?>" class="btn btn-primary">Pdf</a>        
       </p>
       <table class="table table-striped table-hover">
         <tr>

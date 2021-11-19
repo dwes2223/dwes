@@ -34,7 +34,30 @@ class User extends Model
         $user = $stmt->fetch(PDO::FETCH_CLASS);
         // echo $this->birthdate->format('d-m-y');
         return $user;
-    }    
+    } 
+    public static function findbyEmail($email){
+
+        $db = User::db();
+        $stmt = $db->prepare('SELECT * FROM users WHERE email=:email');
+        $stmt->execute(array(':email' => $email));
+        $stmt->setFetchMode(PDO::FETCH_CLASS, User::class);
+        $user = $stmt->fetch(PDO::FETCH_CLASS);
+        return $user;
+    }
+    public function setPassword($password)
+    {
+        $password = password_hash($password, PASSWORD_BCRYPT);
+        $db = User::db();
+        $stmt = $db->prepare('UPDATE users SET password = :password WHERE id = :id');
+        $stmt->bindValue(':id', $this->id);
+        $stmt->bindValue(':password', $password);
+        $stmt->execute();
+        return $password;
+    }
+    public function passwordVerify($password, $user)
+    {
+        return password_verify($password, $user->password);
+    } 
     public function insert()
     {
         $db = User::db();

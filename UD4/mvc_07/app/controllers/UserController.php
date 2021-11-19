@@ -3,9 +3,7 @@ namespace App\Controllers;
 
 use App\Models\User;
 use Dompdf\Dompdf;
-/**
-*
-*/
+
 class UserController
 {
 
@@ -35,7 +33,7 @@ class UserController
         $user->birthdate = $_REQUEST['birthdate'];
         $user->email = $_REQUEST['email'];
         $user->insert();
-        header('Location:/user');
+        header('Location:'.PATH.'/user');
     }
     
     public function show($args)
@@ -61,7 +59,7 @@ class UserController
         $user->birthdate = $_REQUEST['birthdate'];
         $user->email = $_REQUEST['email'];
         $user->save();
-        header('Location:/user');
+        header('Location:'.PATH.'/user');
     }
     
     public function delete($arguments)
@@ -69,7 +67,7 @@ class UserController
         $id = (int) $arguments[0];
         $user = User::find($id);
         $user->delete();
-        header('Location:/user');
+        header('Location:'.PATH.'/user');
     }
     
     public function pdf()

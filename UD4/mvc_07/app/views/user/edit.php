@@ -2,19 +2,19 @@
 <html lang="es">
 
 <head>
-  <?php require "../app/views/parts/head.php" ?>
+  <?php require "app/views/parts/head.php" ?>
 </head>
 
 <body>
 
-  <?php require "../app/views/parts/header.php" ?>
+  <?php require "app/views/parts/header.php" ?>
 
   <main role="main" class="container">
     <div class="starter-template">
 
     <h1>Edición de usuario</h1>
 
-    <form method="post" action="/user/update">
+    <form method="post" action="<?= PATH."/user/update"?>">
         <input type="hidden" name="id"
         value="<?php echo $user->id ?>">
 
@@ -47,10 +47,10 @@
   </div>
 
   </main><!-- /.container -->
-  <?php require "../app/views/parts/footer.php" ?>
+  <?php require "app/views/parts/footer.php" ?>
 
 
 </body>
-<?php require "../app/views/parts/scripts.php" ?>
+<?php require "app/views/parts/scripts.php" ?>
 
 </html>
