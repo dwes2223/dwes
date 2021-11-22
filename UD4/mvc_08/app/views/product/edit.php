@@ -28,9 +28,9 @@
         <label for="Tipo de Producto">Tipo de Producto</label>
         <select class="custom-select"  name="type_id">
               <?php
-              foreach($productsTypes  as $key => $pr){?>
-                <option value="<? echo $pr->id ?>"><?php echo $pr->name?></option>
-              ?>
+              foreach($productsTypes  as $key => $type) { ?>
+                $selected = $product->type_id == $type->id ? 'selected' : '';?>
+                <option value="<? echo $type->id ?>" <?= $selected ?>> <?php echo $type->name?></option>
               <?php } ?>
         </select>
     <div class="form-group">
