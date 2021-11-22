@@ -28,7 +28,7 @@
         <label for="Tipo de Producto">Tipo de Producto</label>
         <select class="custom-select"  name="type_id">
               <?php
-              foreach($productsTypes  as $key => $type) { ?>
+              foreach($productsTypes  as $key => $type) { 
                 $selected = $product->type_id == $type->id ? 'selected' : '';?>
                 <option value="<? echo $type->id ?>" <?= $selected ?>> <?php echo $type->name?></option>
               <?php } ?>
