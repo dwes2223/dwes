@@ -82,7 +82,7 @@ class UserController
         // el response ya no va al navegador, va a $html
         $html = ob_get_clean();
         
-        $dompdf = new DOMPDF();
+        $dompdf = new Dompdf();
         // (Optional) Setup the paper size and orientation
         $dompdf->setPaper('A4', 'landscape');
         $dompdf->loadHtml($html);
