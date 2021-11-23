@@ -14,7 +14,8 @@ namespace Core;
 *       -> El método out debe eliminar el usuario de la sesión
 * 4) Las rutas del menu deben permanecer ocultas para los usuarios no logueados
 * 5) En la sesión debemos guardar el mail del usuario
-*/
+* php-xml
+**/
 class App
 {
 
