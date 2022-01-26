@@ -157,4 +157,18 @@ class StudyController extends Controller
         Session::put('lista', $lista);
         return back();
     }
+
+    public function filter(Request $request)
+    {
+        $filter = $request->filter;
+
+        $studies = Study::where('name', 'LIKE', "%$filter%")->get();
+
+        //así devolvemos JSON
+        // return $studies;
+
+        //pero así html (más simple en el cliente y menos limpio)
+        //pero interesante que lo conozcan los alumnos 
+        return view('study.ajax.filter', ['studies'=>$studies]);
+    }
 }

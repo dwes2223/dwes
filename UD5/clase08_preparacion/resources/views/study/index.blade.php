@@ -34,14 +34,25 @@
         @endforelse
         </table>
 
-
-
-
+        <hr>
+        <h2>Busqueda ajax</h2>
+        <form action="" id="formulario">
+            <input type="text" id="filtro">
+            <input type="submit">
+        </form>
+        <br>
+        <div id="destinofiltro">
+                destino filtro...
+        </div>
 
         </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/ejemploajax.js"></script>
 @endsection
+
 
 
 

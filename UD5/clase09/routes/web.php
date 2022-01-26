@@ -32,7 +32,7 @@ Route::get('prueba2', [PruebaController::class, 'hola']);
 Route::get('prueba2/{name}', [PruebaController::class, 'saludoCompleto']);
 Route::get('saludo', [PruebaController::class, 'saludo']);
 
-
+Route::get('/studies/filter', [StudyController::class, 'filter']);
 Route::resource('studies', StudyController::class)->middleware('auth');
 Route::resource('users', UserController::class);
 Route::resource('roles', RoleController::class);
