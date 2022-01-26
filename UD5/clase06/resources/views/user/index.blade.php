@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-12">
-      <h1>Lista de usuarios</h1>
+      <h1>Lista de usuarios (clase06)</h1>
       <table class="table table-striped">
       <tr>
         <th>Nombre</th>

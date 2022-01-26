@@ -1,9 +1,19 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <h1>Detalle de role: {{ $role->name }}</h1>
+
+      <ul>
+          @foreach($role->users as $user)
+            <li>{{$user->name}}</li>
+          @endforeach
+      </ul>
 
 
-{{ $role->name }}
-
-<h2>Lista de usuarios</h2>
-
-@foreach ($role->users as $user)
-  <li>{{$user->name}}</li>
-@endforeach
+    </div>
+  </div>
+</div>
+@endsection

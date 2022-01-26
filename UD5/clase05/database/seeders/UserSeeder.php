@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -13,24 +14,19 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        //con DB
-        \DB::table('users')->insert([
-            'id' => '1',
+        //con eloquent
+        User::create([
             'name' => 'registrado',
             'email' => 'registrado@dws.es',
             'password' => bcrypt('secret')
         ]);
-    
-        \DB::table('users')->insert([
-            'id' => '2',
+        User::create([
             'name' => 'usuario',
             'email' => 'usuario@dws.es',
             'password' => bcrypt('secret'),
             'role_id' => 2
         ]);
-    
-        \DB::table('users')->insert([
-            'id' => '3',
+        User::create([
             'name' => 'admin',
             'email' => 'admin@dws.es',
             'password' => bcrypt('secret'),
