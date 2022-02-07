@@ -17,4 +17,10 @@ class Study extends Model
     {
         return "" . $this->id;
     }
+
+    public function Modules()
+    {
+        return $this->hasMany(Module::class);
+    }
+
 }

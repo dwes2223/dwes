@@ -39,6 +39,12 @@ class StudyController extends Controller
      */
     public function store(Request $request)
     {
+        $rules = [
+            'code' => 'required|max:6',
+            'name' => 'required',
+            'abreviation' => 'required',
+        ];
+        $request->validate($rules);
         //version corta
         $study = Study::create($request->all());
 
@@ -86,6 +92,12 @@ class StudyController extends Controller
      */
     public function update(Request $request, Study $study)
     {
+        $rules = [
+            'code' => 'required|max:6',
+            'name' => 'required',
+            'abreviation' => 'required',
+        ];
+        $request->validate($rules);
         //version larga, comentada
         // $study->code = $request->code;
         // $study->name = $request->name;

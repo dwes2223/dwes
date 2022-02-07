@@ -116,7 +116,7 @@ class StudyController extends Controller
         $studies = Study::where('name', 'LIKE', "%$filter%")->get();
 
         //así devolvemos JSON
-        // return $studies;
+        //return $studies;
 
         //pero así html (más simple en el cliente y menos limpio)
         //pero interesante que lo conozcan los alumnos 

@@ -7,13 +7,18 @@
 
 
         <h1>Lista de estudios
-            <a href="/studies/create" class="btn btn-primary float-right">
-                Nuevo
-            </a>
+            <div class="float-right">                
+                <a href="/studies/create" class="btn btn-primary">
+                Nuevo                
+                </a>
+                <a href="/study" class="btn btn-primary">
+                Nuevo (sesion)
+                </a>    
+            </div>
         </h1>
-
-
-        <table class="table table-striped">
+    
+    
+    <table class="table table-striped">
         <tr>
             <th>Código</th>
             <th>Nombre</th>

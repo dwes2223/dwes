@@ -40,6 +40,12 @@ Route::resource('users', UserController::class);
 Route::resource('roles', RoleController::class);
 Route::resource('photos', PhotoController::class);
 Route::resource('modules', ModuleController::class);
+
+
+//información del estudio que creo en sesión
+Route::get('study', [StudyController::class, 'session']);
+Route::post('study', [StudyController::class, 'sessionPost']);
+Route::post('study/module', [StudyController::class, 'modulePost']);
 // Route::get('photos', [PhotoController::class, 'index']);
 // Route::get('photos/create', [PhotoController::class, 'create']);
 // Route::get('photos/{id}', [PhotoController::class, 'show']);

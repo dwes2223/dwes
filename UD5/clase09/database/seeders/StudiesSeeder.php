@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Study;
+use App\Models\Module;
 use DB;
 
 class StudiesSeeder extends Seeder
@@ -32,6 +33,7 @@ class StudiesSeeder extends Seeder
         
         Study::factory()
             ->count(10)
+            ->has(Module::factory()->count(5))
             ->create();        
     }
 }

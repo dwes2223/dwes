@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Study;
 use Illuminate\Http\Request;
+use Session;
 
 class StudyController extends Controller
 {
@@ -119,6 +120,42 @@ class StudyController extends Controller
     public function destroy(Study $study)
     {
         //
+    }
+
+    public function session()
+    {
+        // $name = session('name');
+        $code = Session::get('code');
+        $name = Session::get('name');
+        $abreviation = Session::get('abreviation');
+        $lista = Session::get('lista');
+        return view('study.session', [
+            'code' => $code,
+            'name' => $name,
+            'abreviation' => $abreviation,
+            'lista' => $lista,
+        ]);
+        // dd($session);
+    }
+
+    public function sessionPost(Request $request)
+    {
+        $code = $request->code;
+        $name = $request->name;
+        $abreviation = $request->abreviation;
+        // session(['name' => $name]);
+        Session::put('code', $code);
+        Session::put('name', $name);
+        Session::put('abreviation', $abreviation);
+        return back();
+    }
+    public function modulePost(Request $request)
+    {
+        $module = $request->module;
+        $lista = Session::get('lista');
+        $lista[] = $module;
+        Session::put('lista', $lista);
+        return back();
     }
 
     public function filter(Request $request)

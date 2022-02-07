@@ -11,12 +11,13 @@
         <input type="hidden" name="_method" value="PUT">
         <div>
             <label for="code">Código</label>
-            <input type="text" name="code" value="{{$study->code}}"> 
+            <input type="text" name="code" value="{{ old('code') ?  old('code') : $study->code }}"> 
         </div>
 
         <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" value="{{$study->name}}"> 
+            {{-- operador ternario simplificado --}}
+            <input type="text" name="name" value="{{ old('name') ?? $study->name }}"> 
         </div>
 
         <div>

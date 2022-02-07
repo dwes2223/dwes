@@ -10,24 +10,41 @@
         @csrf
         <div>
             <label for="code">Código</label>
-            <input type="text" name="code"> 
+            <input type="text" name="code" value="{{ old('code') }}"> 
+            @error('code')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
 
         <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name"> 
+            <input type="text" name="name" value="{{ old('name') }}"> 
+            @error('name')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
 
         <div>
             <label for="abreviation">Abreviatura</label>
-            <input type="text" name="abreviation"> 
+            <input type="text" name="abreviation" value="{{ old('abrevation') }}"> 
+            @error('abreviation')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
 
         <div>
             <input type="submit" value="crear"> 
         </div>        
         </form>
+        
+        @if(count($errors->all()))
+        <div class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach            
         </div>
+        @endif
+    </div>
     </div>
 
 </div>

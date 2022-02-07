@@ -185,6 +185,5 @@ return [
         'year'                  => 'año',
         'code'                  => 'código',
         'abreviation'                  => 'abreviatura',
-        'hours'                  => 'horas',
     ],
 ];

@@ -8,10 +8,6 @@ use Illuminate\Http\Request;
 
 class ModuleController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -120,9 +116,4 @@ class ModuleController extends Controller
         $module->delete();
         return back()->with('status', 'Modulo borrado');
     }
-    // public function destroy($id)
-    // {
-    //     Module::destroy($id);
-    //     return back()->with('status', 'Modulo borrado');
-    // }
 }

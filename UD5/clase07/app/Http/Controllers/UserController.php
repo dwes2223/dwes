@@ -19,15 +19,25 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index(Request $request)
+    {   
         $user = Auth::user();
-        // dd($user);
-        // $id = Auth::id();
-        // dd($id);
-        $users = User::all();
+        $users = User::paginate(5);
+        $name = $request->name;
+        $role = $request->role;
+        
+        if ($name) {
+            $users = User::where('name', 'like',  "%$name%")->paginate(5);
+        }   
+        if ($role) {
+            $users = User::where('role_id', $role)->paginate(5);
+        }
+
+        $users->withPath("/users?name=$name&role=$role");
         return view('user.index', [
             'users' => $users,
+            'name' => $name,
+            'role' => $role,
             'user' => $user
         ]);
     }

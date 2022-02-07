@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PruebaController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\StudyController;
+use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 
@@ -33,10 +34,12 @@ Route::get('prueba2/{name}', [PruebaController::class, 'saludoCompleto']);
 Route::get('saludo', [PruebaController::class, 'saludo']);
 
 Route::get('/studies/filter', [StudyController::class, 'filter']);
+Route::post('studies/{id}/modules', [ModuleController::class, 'storeToStudy']);
 Route::resource('studies', StudyController::class)->middleware('auth');
 Route::resource('users', UserController::class);
 Route::resource('roles', RoleController::class);
 Route::resource('photos', PhotoController::class);
+Route::resource('modules', ModuleController::class);
 // Route::get('photos', [PhotoController::class, 'index']);
 // Route::get('photos/create', [PhotoController::class, 'create']);
 // Route::get('photos/{id}', [PhotoController::class, 'show']);
