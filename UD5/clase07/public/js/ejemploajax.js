@@ -9,6 +9,6 @@ $('#formulario').click(function (e) {
     $.get("/studies/filter?filter="+data, function(data, status){
         // console.log("Data: " + data + "\nStatus: " + status);
         console.log(data);
-      $('#destinofiltro').html(data);
+      //$('#destinofiltro').html(data);
     });      
 })

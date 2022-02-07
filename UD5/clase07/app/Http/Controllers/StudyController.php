@@ -111,15 +111,16 @@ class StudyController extends Controller
 
     public function filter(Request $request)
     {
+        
         $filter = $request->filter;
-
+        
         $studies = Study::where('name', 'LIKE', "%$filter%")->get();
 
         //así devolvemos JSON
-        //return $studies;
+        return $studies;
 
         //pero así html (más simple en el cliente y menos limpio)
         //pero interesante que lo conozcan los alumnos 
-        return view('study.ajax.filter', ['studies'=>$studies]);
+        //return view('study.ajax.filter', ['studies'=>$studies]);
     }
 }
