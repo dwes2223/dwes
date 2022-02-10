@@ -1,5 +1,5 @@
 console.log("enlazado");
-
+/*
 $('#formulario').click(function (e) {
     e.preventDefault();
     console.log("ha hecho click");
@@ -12,20 +12,22 @@ $('#formulario').click(function (e) {
       //$('#destinofiltro').html(data);
     });      
 })
+*/
 
 
 //Si queremos enviar post en ajax hay que añadir los datos.
 // (https://www.w3schools.com/JQuery/jquery_ajax_get_post.asp)
-//$("button").click(function() {
-    //   $.post("demo_test_post.asp",
-    //   {
-    //     name: "Donald Duck",
-    //     city: "Duckburg"
-    //   },
-    //   function(data, status){
-    //     alert("Data: " + data + "\nStatus: " + status);
-    //   });
-//}); 
+$("button").click(function() {
+    data = $('#filtro').val();
+    $.post("/studies/filter",
+    {
+         filter: data,
+         //,city: "Duckburg"
+    },
+    function(data, status){
+         alert("Data: " + data + "\nStatus: " + status);
+    });
+}); 
     
     // Si eso viene de un formulario podemos leer el 
     // formulario de una tacada con serialize de jquery
