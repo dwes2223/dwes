@@ -17,15 +17,20 @@ $('#formulario').click(function (e) {
 
 //Si queremos enviar post en ajax hay que añadir los datos.
 // (https://www.w3schools.com/JQuery/jquery_ajax_get_post.asp)
-$("button").click(function() {
+$("#formulario").click(function(e) {
+    e.preventDefault();
     data = $('#filtro').val();
+    console.log(data);
+
     $.post("/studies/filter",
     {
-         filter: data,
-         //,city: "Duckburg"
+        "_token": $('#token').val(), 
+        "filter": data
     },
-    function(data, status){
-         alert("Data: " + data + "\nStatus: " + status);
+    function(dataJSON, status){
+        console.log("he vueltoooo");
+        console.log(dataJSON);
+        //alert("Data: " + data + "\nStatus: " + status);
     });
 }); 
     

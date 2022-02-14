@@ -38,6 +38,7 @@
         <hr>
         <h2>Busqueda ajax</h2>
         <form action="" id="formulario">
+            <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
             <input type="text" id="filtro">
             <input type="submit">
         </form>
