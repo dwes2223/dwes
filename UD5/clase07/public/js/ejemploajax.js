@@ -16,8 +16,8 @@ $('#formulario').click(function (e) {
 
 
 //Si queremos enviar post en ajax hay que añadir los datos.
-// (https://www.w3schools.com/JQuery/jquery_ajax_get_post.asp)
-$("#formulario").click(function(e) {
+// modificar index.blade.php y ñadir un campo oculto con el token
+/*$("#formulario").click(function(e) {
     e.preventDefault();
     data = $('#filtro').val();
     console.log(data);
@@ -26,6 +26,25 @@ $("#formulario").click(function(e) {
     {
         "_token": $('#token').val(), 
         "filter": data
+    },
+    function(dataJSON, status){
+        console.log("he vueltoooo");
+        console.log(dataJSON);
+        //alert("Data: " + data + "\nStatus: " + status);
+    });
+}); */
+
+
+//<meta name="csrf-token" content="{{ csrf_token() }}" />
+$("#formulario").click(function(e) {
+    e.preventDefault();
+    data = $('#filtro').val();
+    console.log(data);
+
+    $.post("/studies/filter",
+    {
+        headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')} ,
+        data:{"filter": data}
     },
     function(dataJSON, status){
         console.log("he vueltoooo");
